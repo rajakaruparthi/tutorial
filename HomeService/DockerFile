@@ -1,0 +1,4 @@
+FROM java:8
+EXPOSE 8080
+ADD /target/home-2.1.2.RELEASE.jar home-2.1.2.RELEASE.jar
+ENTRYPOINT ["java", "-jar", "home-2.1.2.RELEASE.jar"] 
